@@ -1,0 +1,48 @@
+# change partition permission
+/dev/preloader            0640   root       system
+/dev/bootimg              0640   root       system
+/dev/recovery             0640   root       system
+/dev/sec_ro               0640   root       system
+/dev/seccfg               0660   root       system
+/dev/pro_info             0660	 root	    system
+/dev/otp 		  0660	 root	    nvram
+/dev/nvram 		   0660	 root	    system
+/dev/misc		   0660	 root	    system
+/dev/block/mmcblk0	   0660	 root	    system
+/dev/block/mmcblk0boot0	   0660	 root	    system
+
+/dev/xLog                 0644   root       root
+/dev/log/ksystem          0660   root       log
+
+/dev/diag                 0660   radio      radio
+
+/dev/ccci*                0660   ccci       ccci
+/dev/ttyC*                0660   ccci       ccci
+/sys/kernel/ccci          modem_info   0644   ccci       ccci
+/sys/kernel/ccci          md1_postfix  0644   ccci       ccci
+/sys/kernel/ccci          md2_postfix  0644   ccci       ccci
+
+# SGX device node
+/dev/pvrsrvkm             0666   root       root
+/dev/pvr_sync             0666   root       root
+
+/sys/devices/platform/leds-mt65xx/leds/green   delay_on      0664  system   system
+/sys/devices/platform/leds-mt65xx/leds/green   delay_off      0664  system   system
+/sys/devices/platform/leds-mt65xx/leds/red   delay_on      0664  system   system
+/sys/devices/platform/leds-mt65xx/leds/red   delay_off      0664  system   system
+/sys/devices/platform/leds-mt65xx/leds/blue   delay_on      0664  system   system
+/sys/devices/platform/leds-mt65xx/leds/blue   delay_off      0664  system   system
+
+# NFC device
+/dev/msr3110              0666   root       root
+/dev/mt6605              0666   system     system
+
+# GPS
+/dev/gps	0660	gps	system
+
+# MTK BTIF driver
+/dev/btif 0660  shell system
+
+# The only 2 modified lines:
+# /dev/graphics/*           0660   *root*       graphics
+# /dev/msm_camera/*         0660   system     *system*
