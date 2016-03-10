@@ -192,8 +192,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qc.sensors.wl_dis=true \
 	ro.qualcomm.sensors.smd=true
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	persist.sys.usb.config=mtp
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	persist.sys.usb.config=adb
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/mediatek/mt6572/mt6572.mk)

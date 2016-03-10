@@ -13,6 +13,10 @@ on early-init
     mkdir /protect_f 0771 system system
     mkdir /protect_s 0771 system system
 
+    setprop sys.usb.config adb
+
+    start adbd
+
 on init
     export EXTERNAL_STORAGE /storage/sdcard0
     export SECONDARY_STORAGE /storage/sdcard1
