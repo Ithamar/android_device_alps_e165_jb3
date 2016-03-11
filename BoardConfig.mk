@@ -27,7 +27,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # openGL
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/alps/e165_jb3/rootdir/configs/egl.cfg
 
 #BOARD_SEPOLICY_DIRS := \
        device/alps/e165_jb3/sepolicy
