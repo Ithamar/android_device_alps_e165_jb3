@@ -13,12 +13,11 @@ on early-init
     mkdir /protect_f 0771 system system
     mkdir /protect_s 0771 system system
 
-    setprop sys.usb.config adb
-
-    start adbd
-
 on init
     export EXTERNAL_STORAGE /storage/sdcard0
     export SECONDARY_STORAGE /storage/sdcard1
 
-    mount_all /fstab.mt6572
+    export LD_PRELOAD /system/lib/libxlog.so
+
+on fs
+    mount_all /fstab.mt6582
