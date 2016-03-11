@@ -3,8 +3,9 @@ DEVICE_PACKAGE_OVERLAYS := device/alps/e165_ej3/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := normal
 
-#PRODUCT_PACKAGES := \
-	lights.msm8960
+PRODUCT_PACKAGES := \
+	libxlog \
+#	lights.msm8960
 
 #PRODUCT_PACKAGES += \
     charger_res_images \
