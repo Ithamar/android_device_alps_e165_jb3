@@ -20,6 +20,10 @@
 /dev/ccci*		0660	ccci	ccci
 /dev/ttyC*		0660	ccci	ccci
 
+/dev/ion		0666	system	system
+/dev/mali		0666	system	system
+/dev/mtkfb_vsync	0660	system	graphics
+
 /sys/kernel/ccci	modem_info   0644   ccci       ccci
 /sys/kernel/ccci	md1_postfix  0644   ccci       ccci
 /sys/kernel/ccci	md2_postfix  0644   ccci       ccci
