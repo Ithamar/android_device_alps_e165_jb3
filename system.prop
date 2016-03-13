@@ -1,3 +1,5 @@
 # Reset hardware back to the "real" value
 # (Kernel publishes itself as mt6582)
 ro.hardware=mt6572
+# Set screen density
+ro.sf.lcd_density=160
