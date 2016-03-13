@@ -1,7 +1,7 @@
 DEVICE_PACKAGE_OVERLAYS := device/alps/e165_jb3/overlay
 
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
-PRODUCT_AAPT_PREF_CONFIG := normal
+PRODUCT_AAPT_CONFIG := normal mdpi hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 PRODUCT_PACKAGES := \
 	libxlog \
