@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/root/init.mt6582.rc:root/init.mt6582.rc \
 	$(LOCAL_PATH)/rootdir/root/fstab.mt6582:root/fstab.mt6582 \
 	$(LOCAL_PATH)/rootdir/root/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
+	$(LOCAL_PATH)/rootdir/configs/vold.fstab:system/etc/vold.fstab \
 #	$(LOCAL_PATH)/rootdir/root/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
 
 # Prebuilt kl and kcm keymaps

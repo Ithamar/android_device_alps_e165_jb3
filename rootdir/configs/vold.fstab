@@ -1,0 +1,6 @@
+# XXX 7 should not be hardcoded!
+dev_mount sdcard /storage/sdcard0 7 devices/platform/mtk-msdc.0
+dev_mount sdcard /storage/sdcard1 auto devices/platform/mtk-msdc.1
+
+# ?????
+dev_mount usbotg /mnt/usbotg auto /devices/platform/mt_usb /devices/platform/musbfsh_hdrc
