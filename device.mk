@@ -13,7 +13,7 @@ PRODUCT_PACKAGES := \
 
 LOCAL_PATH := device/alps/e165_jb3
 
-LOCAL_KERNEL := device/alps/e165_jb3/kernel
+LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
